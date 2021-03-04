@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* global */
+img {
+    width: 100%;
+}
+
+h1 {
+    margin: 0.5rem 0;
+}
+
+/* container and cards */
+
+.container {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+}
+
+.cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 300px);
+    grid-gap: 50px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.card-content {
+    color: #4e4e4e;
+    padding: 1rem;
+}
